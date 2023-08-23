@@ -1,0 +1,28 @@
+.block {
+    display: block;
+    height: 100%; 
+    width: 28%;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  
+
+.table-data *{
+    border: 1px solid black;
+}
+
+.table-data th{
+    background-color: rgb(177, 177, 177);
+    color: #000000;
+}
+
+.table-data td{
+    background-color: #ffffff;
+}
+
+.table-data td:hover{
+    background-color: #000000;
+    color: white;
+}
+   

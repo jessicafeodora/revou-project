@@ -8,17 +8,19 @@
             <h4>Form Belajar</h4>
             <p>Ini adalah website latihan pertama</p>
             <br/>
-            
-            <table>
+            <link rel="stylesheet" href="style.css">
+
+            <div id="user-input">
+            <table class="table-input">
               <tr>
                 <td><label for="name">Nama</label></td>
                 <td>:</td>
-                <td><input type="text" name="name" id="name" size="20"></td>
+                <td><input type="text" name="name" id="name" size="34"></td>
               </tr>  
               <tr>
                 <td><label for="born">Tanggal Lahir</label></td>
                 <td>:</td>
-                <td><input type="text" name="born" id="born" size="20"></td>
+                <td><input type="text" name="born" id="born" size="34"></td>
               </tr>
               <tr>
                 <td><label for="gender">Jenis Kelamin</label></td>
@@ -33,15 +35,15 @@
               <tr>
                 <td><label for="message">Pesan</label></td>
                 <td>:</td>
-                <td><textarea rows="6" cols="36"></textarea></td>
+                <td><textarea rows="5" cols="36"></textarea></td>
               </tr>
-              <tr>
-                <td><button type="button" onclick="doSomething();">Submit</button></td>
-              </tr>
-              </table>
+            </table>
+              <button type="button" class="block">Submit</button></td>
+            </div>
 
             <p></p>
-            <table>
+            <div class="user-data">
+            <table class="table-data">
                 <tr>
                   <th>Nama</th>
                   <th>Tanggal Lahir</th>
@@ -50,35 +52,39 @@
                   <th>Profil</th>
                   <th>Delete</th>
                 </tr>
+                <tbody>
+                  <tr>
+                  <td data-label="Nama">Ada Lovelace</td>
+                  <td data-label="TanggalLahir">December 10, 1815</td>
+                  <td data-label="JenisKelamin">Perempuan</td>
+                  <td data-label="Pesan">Belajar Buat Website</td>
+                  <td data-label="Profil">Klik Disini</td>
+                </tr>
+                </tbody>
+                
                 <tr>
-                  <td>Ada Lovelace</td>
-                  <td>December 10, 1815</td>
-                  <td>Perempuan</td>
-                  <td>Belajar Buat Website</td>
-                  <td>Klik Disini</td>
+                  <td data-label="Nama">Grace Hopper</td>
+                  <td data-label="TanggalLahir">December 9, 1906</td>
+                  <td data-label="JenisKelamin">Perempuan</td>
+                  <td data-label="Pesan">Hello World</td>
+                  <td data-label="Profil">Klik Disini</td>
                 </tr>
                 <tr>
-                  <td>Grace Hopper</td>
-                  <td>December 9, 1906</td>
-                  <td>Perempuan</td>
-                  <td>Hello World</td>
-                  <td>Klik Disini</td>
+                  <td data-label="Nama">Margarel Hamilton</td>
+                  <td data-label="TanggalLahir">August 17, 1936</td>
+                  <td data-label="JenisKelamin">Perempuan</td>
+                  <td data-label="Pesan">Test Dulu</td>
+                  <td data-label="Profil">Klik Disini</td>
                 </tr>
                 <tr>
-                  <td>Margarel Hamilton</td>
-                  <td>August 17, 1936</td>
-                  <td>Perempuan</td>
-                  <td>Test Dulu</td>
-                  <td>Klik Disini</td>
-                </tr>
-                <tr>
-                  <td>Joan Clarke</td>
-                  <td>June 24, 1917</td>
-                  <td>Laki-Laki</td>
-                  <td>Selalu Semangat</td>
-                  <td>Klik Disini</td>
+                  <td data-label="Nama">Joan Clarke</td>
+                  <td data-label="TanggalLahir">June 24, 1917</td>
+                  <td data-label="JenisKelamin">Laki-Laki</td>
+                  <td data-label="Pesan">Selalu Semangat</td>
+                  <td data-label="Profil">Klik Disini</td>
                 </tr>
               </table>
+            </div>
 
         </body>
 </html>
