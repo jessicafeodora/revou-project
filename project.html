@@ -1,90 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RevoU Fixed Project</title>
-        
-        </head>
-        <body>
-            <h4>Form Belajar</h4>
-            <p>Ini adalah website latihan pertama</p>
-            <br/>
-            <link rel="stylesheet" href="style.css">
 
-            <div id="user-input">
-            <table class="table-input">
-              <tr>
-                <td><label for="name">Nama</label></td>
-                <td>:</td>
-                <td><input type="text" name="name" id="name" size="34"></td>
-              </tr>  
-              <tr>
-                <td><label for="born">Tanggal Lahir</label></td>
-                <td>:</td>
-                <td><input type="text" name="born" id="born" size="34"></td>
-              </tr>
-              <tr>
-                <td><label for="gender">Jenis Kelamin</label></td>
-                <td>:</td>
-                <td>
-                  <input type="radio" name="gender" id="man" value="Laki-laki">
-                  <label for="man">Laki-laki</label>
-                  <input type="radio" name="gender" id="woman" value="Perempuan">
-                  <label for="man">Perempuan</label>
-                </td> 
-              </tr>    
-              <tr>
-                <td><label for="message">Pesan</label></td>
-                <td>:</td>
-                <td><textarea rows="5" cols="36"></textarea></td>
-              </tr>
-            </table>
-              <button type="button" class="block">Submit</button></td>
-            </div>
+<head>
+  <title>MyWebsite</title>
 
-            <p></p>
-            <div class="user-data">
-            <table class="table-data">
-                <tr>
-                  <th>Nama</th>
-                  <th>Tanggal Lahir</th>
-                  <th>Jenis Kelamin</th>
-                  <th>Pesan</th>
-                  <th>Profil</th>
-                  <th>Delete</th>
-                </tr>
-                <tbody>
-                  <tr>
-                  <td data-label="Nama">Ada Lovelace</td>
-                  <td data-label="TanggalLahir">December 10, 1815</td>
-                  <td data-label="JenisKelamin">Perempuan</td>
-                  <td data-label="Pesan">Belajar Buat Website</td>
-                  <td data-label="Profil">Klik Disini</td>
-                </tr>
-                </tbody>
-                
-                <tr>
-                  <td data-label="Nama">Grace Hopper</td>
-                  <td data-label="TanggalLahir">December 9, 1906</td>
-                  <td data-label="JenisKelamin">Perempuan</td>
-                  <td data-label="Pesan">Hello World</td>
-                  <td data-label="Profil">Klik Disini</td>
-                </tr>
-                <tr>
-                  <td data-label="Nama">Margarel Hamilton</td>
-                  <td data-label="TanggalLahir">August 17, 1936</td>
-                  <td data-label="JenisKelamin">Perempuan</td>
-                  <td data-label="Pesan">Test Dulu</td>
-                  <td data-label="Profil">Klik Disini</td>
-                </tr>
-                <tr>
-                  <td data-label="Nama">Joan Clarke</td>
-                  <td data-label="TanggalLahir">June 24, 1917</td>
-                  <td data-label="JenisKelamin">Laki-Laki</td>
-                  <td data-label="Pesan">Selalu Semangat</td>
-                  <td data-label="Profil">Klik Disini</td>
-                </tr>
-              </table>
-            </div>
+</head>
 
-        </body>
+<body>
+  <h4>Form Belajar</h4>
+  <p>Ini adalah website latihan pertama</p>
+  <br />
+  <link rel="stylesheet" href="style.css">
+
+  <main class="content">
+    <div>
+      <div id="user-input">
+        <table class="table-input">
+          <tr>
+            <td><label for="name">Nama</label></td>
+            <td>:</td>
+            <td><input type="text" name="name" id="name" size="34"></td>
+          </tr>
+          <tr>
+            <td><label for="born">Tanggal Lahir</label></td>
+            <td>:</td>
+            <td><input type="text" name="born" id="born" size="34"></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Jenis Kelamin</label></td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" id="man" value="Laki-laki">
+              <label for="man">Laki-laki</label>
+              <input type="radio" name="gender" id="woman" value="Perempuan">
+              <label for="man">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="message">Pesan</label></td>
+            <td>:</td>
+            <td><textarea rows="5" cols="36"></textarea></td>
+          </tr>
+        </table>
+        <button type="button" class="block">Submit</button></td>
+      </div>
+    </div>
+
+    <div>
+      <div class="user-data">
+        <table class="table-data">
+          <tr>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Pesan</th>
+            <th>Profil</th>
+            <th>Delete</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td data-label="Nama">Ada Lovelace</td>
+              <td data-label="TanggalLahir">December 10, 1815</td>
+              <td data-label="JenisKelamin">Perempuan</td>
+              <td data-label="Pesan">Belajar Buat Website</td>
+              <td data-label="Profil"><a href="google.com">Klik Disini</a></td>
+              <td>Gambar</td>
+            </tr>
+          </tbody>
+
+          <tr>
+            <td data-label="Nama">Grace Hopper</td>
+            <td data-label="TanggalLahir">December 9, 1906</td>
+            <td data-label="JenisKelamin">Perempuan</td>
+            <td data-label="Pesan">Hello World</td>
+            <td data-label="Profil"><a href="google.com">Klik Disini</a></td>
+            <td>Gambar
+          </tr>
+          <tr>
+            <td data-label="Nama">Margarel Hamilton</td>
+            <td data-label="TanggalLahir">August 17, 1936</td>
+            <td data-label="JenisKelamin">Perempuan</td>
+            <td data-label="Pesan">Test Dulu</td>
+            <td data-label="Profil"><a href="google.com">Klik Disini</a></td>
+            <td>Gambar
+          </tr>
+          <tr>
+            <td data-label="Nama">Joan Clarke</td>
+            <td data-label="TanggalLahir">June 24, 1917</td>
+            <td data-label="JenisKelamin">Laki-Laki</td>
+            <td data-label="Pesan">Selalu Semangat</td>
+            <td data-label="Profil"><a href="google.com">Klik Disini</a></td>
+            <td>Gambar
+          </tr>
+        </table>
+      </div>
+  </main>
+
+
+
+
+
+  </main>
+  <footer>
+    <p>Created by RevoU</p>
+
+  </footer>
+
+</body>
+
 </html>
